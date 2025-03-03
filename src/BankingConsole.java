@@ -3,7 +3,7 @@ package src;
 import java.util.Scanner;
 
 public class BankingConsole {
-    BankingService controller;
+    private BankingService controller;
 
     BankingConsole(BankingService b) {
         this.controller = b;

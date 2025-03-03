@@ -2,16 +2,13 @@ package src;
 
 import java.util.LinkedList;
 
-public class AccountList {
+public class AccountSet {
     private LinkedList<Account> accounts = new LinkedList<Account>();
 
-    AccountList(){}
+    AccountSet(){}
 
-    public int addAccount(Customer cust, double balance) {
-        int newID = accounts.size() + 1;
-        Account a = new Account(newID, cust, balance);
-        accounts.add(a);
-        return newID;
+    public void addAccount(Account newA) {
+        this.accounts.addFirst(newA);
     }
 
     // this method is new -- it creates a helper from the

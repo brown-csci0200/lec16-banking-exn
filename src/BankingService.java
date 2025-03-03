@@ -1,12 +1,10 @@
 package src;
 
-import java.util.LinkedList;
-
 public class BankingService {
-    AccountList accounts;
-    CustomerList customers;
+    private AccountSet accounts;
+    private CustomerSet customers;
 
-    public BankingService(AccountList al, CustomerList cl) {
+    public BankingService(AccountSet al, CustomerSet cl) {
         this.accounts = al;
         this.customers = cl;
     }
