@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/lec14-banking-exn.iml" filepath="$PROJECT_DIR$/.idea/lec14-banking-exn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lec14-banking-exn.iml" filepath="$PROJECT_DIR$/.idea/banking.iml" />
     </modules>
   </component>
 </project>
