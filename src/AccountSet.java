@@ -14,7 +14,7 @@ public class AccountSet {
     // this method is new -- it creates a helper from the
     // for loops that were in getBalance and withdraw
     public Account findAccount(int forAcctNum) {
-        for (Account acct:accounts) {
+        for (Account acct : accounts) {
             if (acct.numMatches(forAcctNum))
                 return acct;
         }
