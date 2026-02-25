@@ -4,6 +4,10 @@ import java.util.LinkedList;
 public class CustomerSet {
     private LinkedList<Customer> customers;
 
+    public CustomerSet() {
+        this.customers = new LinkedList<Customer>();
+    }
+
     public Customer addCustomer(String username, String pwd) {
         Customer newC = new Customer(username, pwd);
         customers.add(newC);
