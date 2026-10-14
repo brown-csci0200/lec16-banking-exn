@@ -14,12 +14,14 @@ public class CustomerSet {
         return newC;
     }
 
-    public Customer findCustomer(String custname) {
+    public Customer findCustomer(String custname) throws NoSuchCustomerException {
         for (Customer cust:customers) {
             if (cust.nameMatches(custname)) {
                 return cust;
             }
         }
-        return null; // was return "Oops -- don't know this customer"
+        // FROM CLASS: ...the model reports that there is no such customer in an informative way...
+        throw new NoSuchCustomerException();
+        // return null; // was return "Oops -- don't know this customer"
     }
 }

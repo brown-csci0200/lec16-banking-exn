@@ -16,6 +16,8 @@ public class Main {
 
         // interact with the bank
         view.loginScreen();
+        // FROM CLASS: we still haven't fixed the OTHER null exception
+        // FROM CLASS: but at least if the account doesn't exist, we now get good behavior.
         view.showBalance(kAcctNum);
         view.withdraw(kAcctNum, 30);
         view.showBalance(kAcctNum);
